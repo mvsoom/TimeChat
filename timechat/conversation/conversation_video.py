@@ -234,7 +234,7 @@ class Chat:
         conv.messages[-1][1] = output_text
         return output_text, output_token.cpu().numpy()
 
-    def upload_video_without_audio(self, video_path, conv, img_list, n_frms=8):
+    def upload_video_without_audio(self, video_path, conv, img_list, sampling="uniform", n_frms=8):
         msg = ""
         if isinstance(video_path, str):  # is a video path
             ext = os.path.splitext(video_path)[-1].lower()
@@ -245,7 +245,7 @@ class Chat:
                 n_frms=n_frms,
                 height=224,
                 width=224,
-                sampling="uniform", return_msg=True
+                sampling=sampling, return_msg=True
             )
             video = self.vis_processor.transform(video)
             video = video.unsqueeze(0).to(self.device)
