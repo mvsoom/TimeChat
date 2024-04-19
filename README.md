@@ -21,6 +21,10 @@
 <a target="_blank"><img src="figs/arch.png" alt="Video-LLaMA" style="width: 80%; min-width: 200px; display: block; margin: auto;"></a>
 </p>
 
+
+
+
+
 ## Introduction
 
 - **TimeChat** is a time-sensitive multimodal large language model specifically designed for long video understanding. Our model incorporates two key architectural contributions: 
@@ -173,3 +177,5 @@ If you find our project useful, hope you can star our repo and cite our paper as
 }
 ```
 
+## Test video
+https://github.com/mvsoom/TimeChat/assets/43237003/c13cb68d-a626-4e79-82da-7045fe35020a
